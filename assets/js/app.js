@@ -19,6 +19,3 @@ $("ul").on('click', 'span', function (e) {
     });
     e.stopPropagation();
 });
-
-//hide task input
-$(".fa-plus").click(() => $("input[type='text']").fadeToggle());
