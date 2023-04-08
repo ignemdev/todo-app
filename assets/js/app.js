@@ -17,6 +17,9 @@ const addTodo = ({ which, target }) => {
   if (which !== 13) return;
 
   const newTodo = target.value;
+
+  if (newTodo.length <= 0) return;
+
   const newTodoItem = getTodoItem(newTodo);
   target.value = "";
 
@@ -43,13 +46,3 @@ const toggleTodoItem = ({ target }) => {
 addTodoInput.addEventListener("keydown", addTodo);
 todoContainer.addEventListener("click", deleteTodo);
 todoContainer.addEventListener("click", toggleTodoItem);
-
-//delete todos
-// $("ul").on("click", "span", function (e) {
-//   $(this)
-//     .parent()
-//     .fadeOut(1000, function () {
-//       $(this).remove();
-//     });
-//   e.stopPropagation();
-// });
