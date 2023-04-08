@@ -6,7 +6,7 @@ const addTodoInput = document.querySelector("#add-todo-input");
 const todoContainer = document.querySelector("#todo-container");
 
 //logic
-const getTodoItem = (todo) => {
+const createTodoItem = (todo) => {
   const todoItemElement = document.createElement("li");
   todoItemElement.classList.add("todo-item");
   todoItemElement.innerHTML = `<span class="delete-item"><i class="fa fa-trash" aria-hidden="true"></i></span> ${todo}`;
@@ -20,7 +20,7 @@ const addTodo = ({ which, target }) => {
 
   if (newTodo.length <= 0) return;
 
-  const newTodoItem = getTodoItem(newTodo);
+  const newTodoItem = createTodoItem(newTodo);
   target.value = "";
 
   todoContainer.appendChild(newTodoItem);
