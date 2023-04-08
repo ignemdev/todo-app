@@ -9,11 +9,11 @@
     <meta name="description" content="Todo app where you can list your tasks.">
     <meta name="keywords" content="todo, app, portfolio">
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Todo List</title>
@@ -26,14 +26,14 @@
 <body>
     <section id="container">
         <h1>To-do List</h1>
-        <input type="text" placeholder="Press enter to add a new task">
-        <ul>
+        <input id="add-todo-input" type="text" placeholder="Press enter to add a new task">
+        <ul id="todo-container">
         </ul>
     </section>
 
     <!--Dependencies-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="assets/js/app.js"></script>
 </body>
 
 </html>
